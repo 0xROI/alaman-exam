@@ -11,7 +11,7 @@ labels.forEach(label => {
  var laparure = document.getElementById("pass").value
  
  if(ladeago == "ladeago" && laparure = "laparure"){
-   alert("Report to admin")
+   alert("Welcome")
  }
 else{
   alert("Be Leet")
