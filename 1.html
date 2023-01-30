@@ -1,1 +1,38 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title >Simple Javascript Application</title>
+</head>
+<body>
+    <input type="text" placeholder="What's Your Name?" id="name">
+    <button type="button" onclick="submit();">Submit</button>
+    <script>
+           function htmlEncode(str){
+             return String(str).replace(/[^\w. ]/gi, function(c){
+             return '&#'+c.charCodeAt(0)+';';
+        });
+      }
+        function submit(){
+           var name = document.getElementById("name").value;
+           document.write(`Hello, ${htmlEncode(name)} Have a good day.`);
+           
+
+        }
+    
+    </script>
+    <input type="text" placeholder="Enter image URL" id="img">
+    <img id="myImage" src="./flag.png" style="visibility: hidden">
+    <button type="button" onclick="getImage();">Get Image</button>
+    <script>
+     function getImage(){
+      var img = document.getElementById("img").value
+      var image = document.createElement("img").src=img
+      
+      }
+    </script>
+</body>
+</html>
+
+
