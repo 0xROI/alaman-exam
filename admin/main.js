@@ -6,6 +6,7 @@ labels.forEach(label => {
     .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
     .join('')
 })
+ function btn(){
  var ladeado = document.getElementById("mail").value
  var laparure = document.getElementById("pass").value
  
@@ -14,4 +15,5 @@ labels.forEach(label => {
  }
 else{
   alert("Be Leet")
+ }
 }
